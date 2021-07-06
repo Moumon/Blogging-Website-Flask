@@ -1,0 +1,24 @@
+
+{
+  "params":
+  {
+    "local_server":"True",
+    "prod_uri":"postgresql://postgres:postgres@localhost/codingthunder",
+    "local_uri": "postgresql://postgres:postgres@localhost/codingthunder",
+
+    "fb_url":"https://facebook.com/codingthunder",
+    "tw_url":"https://twitter.com/codingthunder",
+    "gh_url": "https://github.com/codingthunder",
+    "blog_name": "Coding Thunder",
+    "tag_line": "Heaven for programmers",
+    "gmail-user":"moumon18bhatt@gmail.com",
+    "gmail-password":"zy54nyders@sup",
+    "about_me":"I am a Student",
+    "about_text":"I am here to guide you and help you become a professional data scientist.....Lets Start",
+    "no_of_posts":3,
+    "login_image":"login.svg",
+    "admin_user":"moumon",
+    "admin_password": "darkside44",
+    "upload_location":"C:\\Users\\DELL\\Desktop\\Sandeepan\\materials\\Flask_Blog\\static\\img"
+  }
+}
