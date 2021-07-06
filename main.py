@@ -34,10 +34,12 @@ MAIL_PASSWORD = params['gmail-password']
 mail=Mail(app)
 if (params['local_server']==True):
     #Initialize our connection with our db
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+    app.config['SECRET_KEY'] = 'secret'
 else:
     #we are till now not going to production so for now using the same connection
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['prod_uri']
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+    app.config['SECRET_KEY'] = 'secret'
 
 db = SQLAlchemy(app)
 #define the class it has the variables an fields exctly as our database
